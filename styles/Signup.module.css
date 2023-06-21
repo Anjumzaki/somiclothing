@@ -1,0 +1,77 @@
+@font-face {
+    font-family: RobotoSlab;
+    src: url(../Fonts//RobotoSlab//RobotoSlab-Regular.ttf);
+}
+
+.container {
+    min-height: 100vh !important;
+    background-color: rgb(240, 240, 240);
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    padding-top: 180px;
+}
+
+.card {
+    width: 50% !important;
+    min-height: 60vh !important;
+    background-color: white;
+    border-radius: 10px;
+    font-family: RobotoSlab;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid silver;
+    box-shadow: 5px 5px 5px silver;
+}
+
+.cardTitle {
+    text-align: center;
+    font-style: italic;
+}
+
+.passwordInput {
+    margin-top: 10px;
+}
+
+.phonedInput {
+    margin-top: 10px;
+}
+
+.FineInput {
+    border-color: green !important;
+    border-bottom-width: 2px !important;
+}
+
+.BadInput {
+    border-color: red !important;
+    border-bottom-width: 2px !important;
+}
+
+.button {
+    margin-top: 10px;
+}
+
+.errorText {
+    color: red;
+    font-size: 0.7em;
+    font-style: italic;
+}
+
+.loginBtn {
+    color: royalblue !important;
+}
+
+@media screen and (max-width: 960px) {
+    .card {
+        width: 80% !important;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .main {
+        padding-top: 80px;
+    }
+}

@@ -1,0 +1,136 @@
+@font-face {
+    font-family: RobotoSlabRegular;
+    src: url('../Fonts/RobotoSlab/RobotoSlab-Regular.ttf');
+  }
+
+.container {
+    min-height: 100vh !important;
+    background-color: rgb(240, 240, 240);
+}
+
+.main {
+    min-height: 100vh !important;
+    padding-top: 180px;
+    transition: all 200ms linear;
+}
+
+.ConDiv {
+    display: flex;
+    flex-direction: row;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.FormCon {
+    flex: 2;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.FormConHeader{
+    opacity: 0.8;
+    font-weight: 100;
+    font-family: RobotoSlabRegular;
+    font-size: 1.3em;
+    font-style: italic;
+}
+.rowDiv{
+    display: flex;
+    flex-direction: row;
+    margin: none;
+}
+.rowDivCol{
+    flex: 1;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.sideCon {
+    flex: 1;
+    min-height: 100%;
+    padding:20px;
+}
+.myInputCon{
+    width: 100% !important;
+    margin: 5px;
+}
+.myInput{
+    width: 100% !important;
+}
+.button{
+    width: 200px;
+    padding: 10px;
+    color: #6495ED;
+    align-self: flex-end;
+    margin: 10px;
+}
+.totalDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 9px;
+    width: 90%;
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.totalDiv h1{
+    font-weight: 400;
+    margin: 5px;
+    opacity: 0.8;
+    font-family: RobotoSlabRegular;
+}
+.alertText{
+    font-family: RobotoSlabRegular;
+    text-align: center;
+    font-style: italic;
+    font-size: 1.5em;
+    font-weight: 400;
+    color: red;
+    margin: 0px;
+    opacity: 0;
+    transition: all 200ms linear;
+    height: 20px;
+    margin:10px;
+}
+.alertTextShown{
+    opacity: 1;
+}
+.confirmInfoContainer{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+}
+.backLink{
+    color: #6495ED;
+    font-family: RobotoSlabRegular;
+    margin-left: 10px;
+    font-size: 1.1em;
+    width: fit-content;
+}
+.rememberCon{
+    margin-top: 10px;
+    margin-left: 10px;
+    font-family: RobotoSlabRegular;
+}
+.retriveBtn{
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: RobotoSlabRegular;
+    min-width: fit-content;
+    font-size: 0.9em;
+    color: #6495ED;
+    display: inline-block;
+    margin: 5px;
+}
+@media screen and (max-width: 1080px) {
+        .ConDiv{
+            flex-direction: column-reverse;
+    }
+}
+@media screen and (max-width: 720px) {
+    .main {
+        padding-top: 80px;
+    }
+}

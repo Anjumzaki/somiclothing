@@ -1,0 +1,819 @@
+@font-face {
+    font-family: RobotoSlabRegular;
+    src: url('../Fonts/RobotoSlab/RobotoSlab-Regular.ttf');
+}
+
+@font-face {
+    font-family: DancingScript;
+    src: url('../Fonts/DancingScript/DancingScript-Regular.ttf');
+}
+/* Input */
+
+.MyInputParentDiv {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: RobotoSlabRegular;
+}
+
+.MyInputStyle {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid silver;
+    transition: all 150ms linear !important;
+    font-family: RobotoSlabRegular;
+    border-radius: 5px;
+}
+
+.MyInputStyle:focus {
+    outline: none;
+    box-shadow: none;
+    font-size: 1.1em;
+    border-radius: 10px;
+    border-color: #6495ED;
+    border-width: 3px;
+}
+
+.MyInputLabel {
+    margin: 0px;
+    padding: 0px;
+    font-weight: 100;
+    font-size: 1em;
+}
+
+.MyInputSmallLabel {
+    margin: 0px;
+    padding: 0px;
+    font-weight: 100;
+    font-size: 0.7em;
+    font-style: italic;
+    margin-left: 10px;
+}
+
+.MyInputLabelContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.MyInputIconStyle {
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+}
+
+/* Button */
+
+.MyButtonParentDiv {
+    padding: 15px;
+    border-radius: 20px;
+    background-color: white;
+    border: 3px solid #6495ED;
+    width: 150px;
+    cursor: pointer;
+    transition: all 150ms linear;
+    font-family: RobotoSlabRegular;
+}
+
+.MyButtonParentDiv:hover {
+    border: 3px solid white;
+    background-color: #6495ED;
+    color: white;
+}
+
+.MyButtonTextStyle {
+    font-size: 1em;
+    text-align: center;
+    margin: 0px;
+}
+
+
+/* Navbar */
+
+
+.navbarContainer {
+    width: 100%;
+    background-color: #6495ED;
+    box-shadow: 1px 1px 1px silver;
+    position: absolute;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    z-index: 99;
+}
+
+.navbarTopDiv {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.navbarBottomDiv {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: all 200ms linear;
+    height: 0px;
+    overflow: hidden;
+}
+
+.navbarBottomLink {
+    font-family: RobotoSlabRegular;
+    margin: 10px;
+    color: white;
+    transition: all 100ms linear;
+    user-select: none;
+}
+
+.navbarBottomLink:hover {
+    font-size: 1.2em;
+}
+
+.navbarTopIconDiv{
+    flex:1;
+}
+.navbarTopIconLink{
+    cursor: pointer;
+}
+.logo {
+    display: inline;
+    font-weight: bold;
+    font-size: 2em;
+    font-style: italic;
+    font-family: DancingScript;
+    user-select: none;
+    color: white;
+    margin: 0px;
+    margin-left: 5px;
+}
+
+.navbarSearchInputContainer {
+    flex: 2;
+}
+
+.navbarSearchInput {
+    border: None;
+    border-radius: 5px;
+}
+
+.navbarSearchInput:focus {
+    font-size: 1em;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.navbarTopDivIcons {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navbarDivIcon {
+    color: white;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 1.4em;
+}
+
+.navbarOpenIcon {
+    color: white;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 1.4em;
+    display: none;
+}
+
+.navbarBottomDiv {
+    height: 50px;
+}
+
+.navbarBottomDivOpen {
+    height: 300px !important;
+}
+
+.navbarUserOptions {
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 40px;
+    background-color: rgb(72, 112, 187);
+    padding: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    transition: all 200ms linear;
+}
+
+.navbarUserOptionsShown {
+    opacity: 1 !important;
+}
+
+.navbarUserOptionsDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.navbarUserOptionLink {
+    margin: 5px;
+    color: white;
+    font-family: RobotoSlabRegular;
+    padding: 5px;
+    font-size: 1em;
+    transition: all 100ms linear;
+}
+
+.navbarUserOptionLink:hover {
+    font-size: 1.3em;
+}
+
+.navbarUserOptionIcon {
+    position: absolute;
+    top: -10px;
+    color: rgb(72, 112, 187);
+}
+
+
+/* Item Card */
+
+
+.ItemCardCon {
+    align-self: center;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: fit-content;
+    min-height: fit-content;
+    overflow: hidden;
+    transition: all 300ms linear;
+    padding-bottom: 10px;
+    margin: 10px;
+    background-color: white;
+}
+
+.ItemCardCon:hover {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+.ItemCardImageCon:hover .ItemCardImage {
+    height: 130% !important;
+}
+
+.ItemCardImageCon:hover .ItemCardImageOption {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.ItemCardImageCon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px !important;
+    height: 300px !important;
+    min-width: 300px !important;
+    min-height: 300px !important;
+    overflow: hidden;
+    position: relative;
+}
+
+.ItemCardImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover !important;
+    transition: all 300ms linear !important;
+}
+
+.ItemCardInfoCon {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ItemCardItemName {
+    font-size: 1.4em;
+    font-family: RobotoSlabRegular;
+    margin: 0px;
+    margin-top: 10px;
+    color: rgb(40, 40, 40);
+    cursor: pointer;
+}
+
+.ItemCardImageOption {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all 300ms linear !important;
+    width: 100% !important;
+    height: 100% !important;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 5;
+}
+
+.ItemCardImageOptionButton {
+    font-size: 1.3em;
+    border: 3px solid white;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    padding: 7px;
+    border-radius: 10px;
+    background-color: #6495ED;
+    color: white;
+    font-family: RobotoSlabRegular;
+    transition: all 100ms linear !important;
+}
+
+.ItemCardImageOptionButton:hover {
+    font-size: 1.5em;
+}
+
+.ItemCardPriceCon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.ItemCardPrice {
+    margin: 0px;
+    font-size: 1.1em;
+    color: rgb(40, 40, 40);
+    font-style: italic;
+    font-family: RobotoSlabRegular;
+}
+
+.ItemCardPriceOld {
+    margin: 0px;
+    font-size: 0.9em;
+    color: rgb(100, 100, 100);
+    margin-left: 5px;
+    font-family: RobotoSlabRegular;
+    text-decoration: line-through;
+}
+
+.ItemCardImageOptionSaleText {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    margin: 0px;
+    font-size: 1.1em;
+    margin: 7px;
+    border: 3px solid white;
+    padding: 5px;
+    font-family: RobotoSlabRegular;
+    color: white;
+    background-color: #6495ED;
+    border-radius: 10px;
+    font-style: italic;
+    z-index: 10;
+    user-select: none;
+}
+
+
+/* Divider */
+
+.divider {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.dividerText {
+    font-size: 1.5em;
+    font-family: RobotoSlabRegular;
+    font-weight: bold;
+    font-style: italic;
+    min-width: fit-content;
+}
+
+.dividerLine {
+    height: 1px;
+    width: 100%;
+    border-top: 1px dotted gray;
+    margin-left: 20px;
+}
+
+
+/* Cart Item */
+
+.CartItemCon {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 10px;
+    transition: all 100ms linear;
+    position: relative;
+    user-select: none;
+}
+
+.CartItemCon:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.CartItemProductText {
+    font-size: 1em;
+    margin: 0px;
+    font-style: RobotoSlabRegular;
+    flex: 2;
+    text-align: center;
+}
+
+.CartItemProductImgCon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 200px;
+}
+
+.CartItemProductIcon {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.CartItemProductImgSubCon {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    position: relative;
+}
+
+.CartItemProductQuantityCon {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.CartItemProductQuantityIcon {
+    color: white;
+    background-color: #6495ED;
+    padding: 5px;
+    margin: 0px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.CartItemProductQuantityText {
+    margin: 0px;
+    font-size: 1em;
+    text-align: center;
+    user-select: none;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.CartItemProductQuantityTextOnImage {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    margin: 0px;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    color: white;
+    font-size: 1em;
+    padding: 2px;
+    background-color: black;
+    text-align: center;
+    user-select: none;
+}
+
+.CartItemRemoveIcon {
+    font-size: 1em;
+    background-color: red;
+    color: white;
+    padding: 5px;
+    margin: 0px;
+    cursor: pointer;
+}
+
+.CartItemSM {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center !important;
+    transition: all 200ms linear !important;
+}
+
+.CartItemProductQuantityLabel {
+    display: none;
+}
+
+.CartItemProductTextLabel {
+    display: none;
+}
+
+.CartItemSMOpen {
+    height: 70px !important;
+    margin-top: 20px;
+}
+
+.CartItemOpenMoreIcon {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin: 10px;
+    font-size: 1.5em;
+    cursor: pointer;
+    padding: 5px;
+    display: none;
+}
+
+
+/* Image Slider */
+
+.ImageSliderCon {
+    width: 100%;
+    position: relative;
+    height: 100%;
+}
+
+.ImageSliderImg {
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+    height: 100%;
+    opacity: 0;
+    transition: all 500ms linear;
+}
+
+.ImageSliderImgActive {
+    opacity: 1;
+}
+
+.ImageSliderIcon {
+    font-size: 2.5em;
+    color: white;
+    cursor: pointer;
+    transition: all 200ms linear;
+}
+
+.ImageSliderIconCon {
+    display: flex;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ImageSliderIconSubCon {
+    padding: 5px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    opacity: 0.5;
+    transition: all 200ms linear;
+}
+
+.ImageSliderIconSubCon:hover {
+    opacity: 1;
+    background-color: white;
+    cursor: pointer;
+    border-color: #6495ED;
+}
+
+.ImageSliderIconSubCon:hover .ImageSliderIcon {
+    color: #6495ED;
+}
+
+
+/* Back To Top Button */
+
+.BackToTopButton {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    background-color: #6495ED;
+    color: white;
+    font-size: 2em !important;
+    height: 0px;
+    width: 0px;
+    transition: all 300ms linear;
+    border: 5px solid white;
+    animation-name: BackToTopButtonAnim;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    z-index: -99;
+}
+.BackToTopButtonShown {
+    opacity: 1;
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 99;
+}
+
+.BackToTopButtonShown:hover {
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+
+/* TextWithLabel */
+
+.textWithLabelCon{
+    display: flex;
+    flex-direction: column;
+    margin: 8px;
+}
+.TWLText{
+    font-size: 1.2em;
+    font-weight: 400;
+    font-family: RobotoSlabRegular;
+    margin: 0px;
+    margin-left: 20px;
+}
+.TWLLabel{
+    font-size: 1em;
+    font-weight: 400;
+    font-style: italic;
+    font-family: RobotoSlabRegular;
+    margin: 0px;
+    opacity: 0.7;
+}
+
+@keyframes BackToTopButtonAnim {
+    0% {
+        bottom: 50px;
+    }
+
+    25% {
+        bottom: 60px;
+    }
+
+    50% {
+        bottom: 50px;
+    }
+
+    75% {
+        bottom: 40px;
+    }
+
+    100% {
+        bottom: 50px;
+    }
+}
+
+
+
+
+@media screen and (min-width: 720px) {
+    .CartItemSM {
+        flex: 1;
+        margin: 20px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .CartItemOpenMoreIcon {
+        display: block;
+    }
+
+    .CartItemRemoveIcon {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        margin: 10px;
+        font-size: 1.5em;
+    }
+
+    .CartItemSM {
+        flex-direction: row;
+        justify-content: space-between !important;
+        align-items: center !important;
+        width: 100%;
+        height: 0px;
+        overflow: hidden;
+    }
+
+    .CartItemProductText {
+        margin: 0px;
+        font-size: 0.9em;
+    }
+
+    .CartItemProductText {
+        position: relative;
+    }
+
+    .CartItemProductQuantityCon {
+        position: relative;
+    }
+
+    .CartItemProductQuantityLabel {
+        bottom: 30px !important;
+        display: block;
+    }
+
+    .CartItemProductTextLabel {
+        position: absolute;
+        bottom: 15px;
+        left: 5px;
+        font-family: RobotoSlabRegular;
+        font-weight: 100;
+        font-style: italic;
+        font-size: 0.8em;
+        display: block;
+    }
+
+    .CartItemCon {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .CartItemProductIcon {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 5px;
+        margin-right: 0px;
+    }
+
+    .CartItemProductImgSubCon {
+        width: 100px;
+        height: 100px;
+    }
+
+    
+    .CartItemProductText {
+        margin: 10px;
+    }
+
+    .CartItemProductImgCon {
+        flex-direction: column;
+    }
+
+    .navbarContainer {
+        padding: 0px;
+    }
+
+    .navbarTopDiv {
+        padding: 10px;
+    }
+
+    .navbarDivIcon {
+        font-size: 1.2em;
+        margin: 5px;
+    }
+
+    .navbarSearchInputContainer {
+        margin-left: 20px;
+    }
+
+    .navbarBottomDiv {
+        height: 0px;
+        flex-direction: column;
+    }
+
+    .navbarOpenIcon {
+        font-size: 1.2em;
+        display: block;
+    }
+
+    .logo {
+        flex: 0.3;
+        font-size: 1.3em;
+    }
+}

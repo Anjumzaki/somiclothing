@@ -1,0 +1,188 @@
+@font-face {
+    font-family: RobotoSlabRegular;
+    src: url('../Fonts/RobotoSlab/RobotoSlab-Regular.ttf');
+  }
+
+.container {
+    min-height: 100vh !important;
+    background-color: rgb(240, 240, 240);
+}
+
+.main {
+    min-height: 100vh !important;
+    padding-top: 180px;
+    transition: all 200ms linear;
+    padding-bottom: 30px;
+}
+.ImageSliderCon{
+    width: 35% !important;
+    min-width: 350px;
+    height: 500px !important;
+    background-color: white;
+}
+.parentCon{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0,0.3);
+}
+.InfoCon{
+    display: flex;
+    flex-direction: column;
+    flex:2;
+    padding: 30px;
+}
+.productTitle{
+    font-family: RobotoSlabRegular;
+    margin: 0px;
+    font-size: 1.7em;
+}
+.productPrice{
+    font-family: RobotoSlabRegular;
+    margin: 5px;
+    font-size: 1em;
+    font-weight: 100;
+    color: rgba(0, 0, 0, 0.8);
+}
+.productDescription{
+    font-family: RobotoSlabRegular;
+    margin: 5px;
+    font-size: 1.1em;
+    font-weight: 100;
+}
+.colorDivider{
+    margin: 0px !important;
+    padding: 0px !important;
+    font-size: 0.8em;
+    margin-top: 10px !important;
+}
+.divider{
+    margin: 0px !important;
+    padding: 0px !important;
+    font-size: 0.8em;
+    margin-top: 30px !important;
+}
+.sizeStyle{
+    font-size: 1.3em;
+    padding: 5px;
+    border: 2px solid #6495ED;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: RobotoSlabRegular;
+    margin: 5px;
+}
+.sizeSelectedStyle{
+    background-color: #6495ED;
+    color:white;
+    font-weight: bold;
+}
+.colorStyle{
+    font-size: 1.3em;
+    padding: 5px;
+    border: 2px solid #6495ED;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: RobotoSlabRegular;
+    margin: 5px;
+}
+.colorSelectedStyle{
+    background-color: #6495ED;
+    color:white;
+    font-weight: bold;
+}
+.SizeCon{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.colorStyleNoStock{
+    border: 2px solid red;
+}
+.sizeStyleNoStock{
+    border: 2px solid red;
+}
+.productID{
+    font-size: 0.7em;
+    font-family: RobotoSlabRegular;
+    color: rgba(0, 0, 0, 0.5);
+    margin: 0px;
+    font-weight: 100;
+}
+.quantityIcon{
+    height: 20px;
+    width: 20px;
+    font-size: 2em;
+    color: white;
+    background-color: #6495ED;
+    margin: 0px;
+    padding: 5px;
+    cursor: pointer;
+}
+.quantityCon{
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.quantityText{
+    font-size: 1em;
+    text-align: center;
+    height: 20px;
+    margin: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: RobotoSlabRegular;
+    user-select: none;
+}
+.addToCartBtn{
+    padding: 15px;
+    background-color: #6495ED;
+    color:white;
+    font-family: RobotoSlabRegular;
+    width: fit-content;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all 200ms linear;
+    user-select: none;
+}
+.addToCartBtn:hover{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+}
+.productOldPrice{
+    font-size: 0.9em;
+    font-family: RobotoSlabRegular;
+    margin: 5px;
+    font-weight: 100;
+    color: rgba(0, 0, 0, 0.4);
+    text-decoration: line-through;
+}
+.productPriceCon{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+@media screen and (max-width: 720px) {
+    .main {
+        padding-top: 80px;
+    }
+    .parentCon{
+        flex-direction: column;
+        min-width: 300px;
+    }
+    .ImageSliderCon{
+        width: 100% !important;
+        min-width: 0px !important;
+    }
+}
